@@ -1,0 +1,38 @@
+// Number 1
+Console.Write("Input 1: ");
+int input1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input 2: ");
+int input2 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input 3: ");
+int input3 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input 4: ");
+int input4 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input 5: ");
+int input5 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"You entered: {input1}, {input2}, {input3}, {input4}, {input5}");
+
+// Number 2
+Console.Write("Quiz: ");
+int quiz = Convert.ToInt32(Console.ReadLine());
+
+Console.Write($"Midterm: ");
+int midterm = Convert.ToInt32(Console.ReadLine());
+
+Console.Write($"Final: ");
+int final = Convert.ToInt32(Console.ReadLine());
+
+double finalGrade = (quiz * 0.2) + (midterm * 0.3) + (final * 0.5);
+Console.WriteLine($"Your final grade is: {finalGrade}");
+
+bool isPassed = finalGrade >= 75;
+bool isExcellent = finalGrade >= 90;
+bool isFailed = finalGrade < 75;
+
+Console.WriteLine($"Passed: {isPassed}");
+Console.WriteLine($"Excellent: {isExcellent}");
+Console.WriteLine($"Failed: {isFailed}");
