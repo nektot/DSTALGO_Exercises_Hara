@@ -1,0 +1,63 @@
+namespace Project1
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtNumber.Text, out int number))
+            {
+                if (number % 2 == 0)
+                    lblResult.Text = number + " is Even";
+                else
+                    lblResult.Text = number + " is Odd";
+            }
+            else
+            {
+                lblResult.Text = "Please enter a valid number";
+            }
+        }
+    }
+}
+
+namespace Project1
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtNumber.Text, out int number))
+            {
+                if (number > 0)
+                    lblResult.Text = number + " is Positive";
+                else if (number < 0)
+                    lblResult.Text = number + " is Negative";
+                else
+                    lblResult.Text = "The number is Zero";
+            }
+            else
+            {
+                lblResult.Text = "Please enter a valid number";
+            }
+        }
+    }
+}
